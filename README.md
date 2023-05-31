@@ -29,8 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Screenshot1](images/Screenshot (169).png)
-[Screenshot2](images/Screenshot (170).png)
+![Screenshot1](/images/Screenshot%20(169).png)
+
+![Screenshot2](/images/Screenshot%20(170).png)
 
 ### Links
 
@@ -67,4 +68,3 @@ Even after spending over two days on this project, i still have a long way to go
 
 - Frontend Mentor - [@Henry33y](https://www.frontendmentor.io/profile/Henry33y)
 - Twitter - [@henryasante336](https://twitter.com/henryasante336)
-
