@@ -1,0 +1,147 @@
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 0%);
+    font-family: 'Epilogue', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--Almost-White) !important;
+    width: 100%;
+}
+.mynav-logo{
+    transform:scale(0.9);
+}
+.nav-link{
+    color: var(--Medium-Gray) !important;
+}
+.nav-link:hover{
+    color: var(--Almost-Black) !important;
+}
+.mydropdown-menu{
+    width: 140px;
+    box-shadow: 2px 2px 30px 2px hsla(0, 0%, 41%,0.3);
+    transition: 400ms;
+}
+.mydropdown-menu2.opened2{
+    animation: expand 400ms ease-in;
+    box-shadow: none !important;
+    transition: 400ms;
+}
+.mobile-nav-container{
+    z-index: 2 !important;
+    background-color: rgb(0,0,0,0.5) !important;
+}
+.opened{
+    display: block !important;
+    
+}
+.opened2{
+    /* display: block !important; */
+    height: 100px;
+    overflow-y: hidden;
+}
+.closed{
+    transition: 400ms;
+    height: 0;
+    overflow-y: hidden;
+}
+.menu1.opened2{
+    height: 110px;
+}
+.menu2.opened2{
+    height: 80px;
+}
+.arrow{
+    transition: transform 400ms;
+}
+.arrowUp{
+    transform: rotate(180deg);
+}
+.in{
+    height: 100px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.mobile-nav{
+    width: 200px;
+}
+.mobile-nav{
+    animation: slideIn 400ms ease-in;
+}
+main{
+    padding: 0;
+    padding-bottom: 4em;
+    @media(min-width: 768px){
+        padding-top: 5em !important;
+        padding-left: 5em !important;
+        padding-right: 5em !important;
+        padding-bottom: 2em !important;
+    }
+    
+}
+main>:first-child{
+    position: relative;
+    @media (max-width:500px){
+        padding: 20px !important;
+    }
+}
+main h1{
+    font-weight: 700;
+    font-size: 5vw;
+    @media (min-width:768px){
+        max-width: 390px !important;
+    }
+    @media (max-width:600px){
+        font-size: 2em;
+    }
+    @media (max-width:300px){
+        font-size: 2em;
+    }
+}
+main p{
+    font-size: 1.05em !important;
+    @media (min-width:768px){
+        max-width: 390px !important;
+    }
+    @media (max-width:768px){
+        font-size: 0.8em;
+    }
+}
+main button:hover{
+    background-color: var(--Almost-White) !important;
+    outline: 1px solid var(--Almost-Black) !important;
+    color: var(--Almost-Black) !important;
+}
+main button+div{
+    position: absolute;
+    bottom: 0px;
+}
+main button+div>svg{
+    @media (max-width: 900px) {
+        transform:scale(0.8);
+    }
+    @media (max-width: 500px) {
+        transform:scale(0.7);
+    }
+}
+@keyframes expand{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 100px;
+    }
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
