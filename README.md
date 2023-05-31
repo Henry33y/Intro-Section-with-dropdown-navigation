@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot1](images/Screenshot (169).png)
-![Screenshot2](images/Screenshot (170).png)
+[Screenshot1](images/Screenshot (169).png)
+[Screenshot2](images/Screenshot (170).png)
 
 ### Links
 
